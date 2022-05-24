@@ -10,8 +10,6 @@ class CreateVotersTable extends Migration
     {
         Schema::create('voters', function (Blueprint $table) {
             $table->engine    = "InnoDB";
-            $table->charset   = "utf8";
-            $table->collation = "uft8_unicode_ci";
             $table->comment  = "Voters";
             
             $table->smallIncrements('id');

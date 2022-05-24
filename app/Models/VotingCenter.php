@@ -14,7 +14,7 @@ class VotingCenter extends Model
     protected $perPage  = 10;
     protected $fillable = ["code", "name", "address", "region_id"];
 
-    protected $timestamp = false;
+    public $timestamps = false;
 
     public function region() : BelongsTo
     {

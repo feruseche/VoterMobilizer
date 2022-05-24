@@ -10,8 +10,6 @@ class CreateRegionsTable extends Migration
     {
         Schema::create('regions', function (Blueprint $table) {
             $table->engine    = "InnoDB";
-            $table->charset   = "utf8";
-            $table->collation = "uft8_unicode_ci";
             $table->comment  = "Regions of the municipality";
             
             $table->smallIncrements('id');

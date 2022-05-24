@@ -14,7 +14,7 @@ class Sector extends Model
     protected $perPage  = 10;
     protected $fillable = ["name", "leader", "email", "mobile", "region_id"];
 
-    protected $timestamp = false;
+    public $timestamps = false;
 
     public function voters() : HasMany
     {

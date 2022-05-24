@@ -10,8 +10,6 @@ class CreateSectorsTable extends Migration
     {
         Schema::create('sectors', function (Blueprint $table) {
             $table->engine    = "InnoDB";
-            $table->charset   = "utf8";
-            $table->collation = "uft8_unicode_ci";
             $table->comment  = "Sectors of the regions";
             
             $table->smallIncrements('id');

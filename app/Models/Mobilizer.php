@@ -13,7 +13,7 @@ class Mobilizer extends Model
     protected $perPage  = 10;
     protected $fillable = ["dni","name", "lastname", "address", "email", "mobile", "sector_id"];
 
-    protected $timestamp = false;
+    public $timestamps = false;
 
     public function sector() : BelongsTo
     {

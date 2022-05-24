@@ -10,8 +10,6 @@ class CreateMobilizersTable extends Migration
     {
         Schema::create('mobilizers', function (Blueprint $table) {
             $table->engine    = "InnoDB";
-            $table->charset   = "utf8";
-            $table->collation = "uft8_unicode_ci";
             $table->comment  = "Mobilizers";
             
             $table->smallIncrements('id');

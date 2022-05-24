@@ -14,7 +14,7 @@ class Region extends Model
     protected $perPage  = 10;
     protected $fillable = ["name", "leader", "email", "mobile"];
 
-    protected $timestamp = false;
+    public $timestamps = false;
 
     public function sectors() : HasMany
     {
